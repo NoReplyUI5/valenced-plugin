@@ -27,34 +27,6 @@
         }
       }
     },
-    "mxtiy.audiofix": {
-      "name": "Bluetooth Audio Fix",
-      "description": "Prevents Discord from switching to handsfree (HFP) mode during calls by patching the native audio manager's setCommunicationModeOn method.",
-      "author": "NoReplyUI5 <1053918356375351386> (https://github.com/NoReplyUI5 \"GitHub\")",
-      "contributors": [
-        "Narwhal",
-        "redstonekasi"
-      ],
-      "icon": "voice_bar_bluetooth",
-      "channels": {
-        "latest": "1.0.0"
-      },
-      "versions": {
-        "1.0.0": {
-          "url": "https://noreplyui5.github.io/valenced-plugin/pool/mxtiy.audiofix@1.0.0.zip",
-          "sha256": "ef853b46876314f44742ae099f643a38e23fd1fc11514ec4eb8c47973b69522b",
-          "size": 922,
-          "dependencies": {
-            "valenced.api": {
-              "version": ">=1 <2"
-            },
-            "discord": {
-              "version": "*"
-            }
-          }
-        }
-      }
-    },
     "mxtiy.copyuserid": {
       "name": "Fast Copy User ID",
       "description": "Adds a 'Copy User ID' button to the message action sheet to quickly copy the message author's ID.",
