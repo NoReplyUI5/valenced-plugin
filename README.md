@@ -17,14 +17,14 @@ https://noreplyui5.github.io/valenced-plugin/
 | Plugin | Description | Source |
 |---|---|---|
 | **Age Gate Skip** | Bypasses age-restricted channel confirmation prompts automatically. | Written by [NoReplyUI5](https://github.com/NoReplyUI5) for Valenced |
-| **Fast Copy User ID** | Adds a 'Copy User ID' button to the message action sheet to quickly copy the message author's ID. | Written by [NoReplyUI5](https://github.com/NoReplyUI5) for Valenced |
+| **HypeSquad Switcher** | Switch your HypeSquad house directly from settings. | Written by [NoReplyUI5](https://github.com/NoReplyUI5) for Valenced |
 
 ### Ported
 
 | Plugin | Description | Source |
 |---|---|---|
+| **Fast Copy User ID** | Adds a 'Copy User ID' button to the message action sheet to quickly copy the message author's ID. | Ported by [NoReplyUI5](https://github.com/NoReplyUI5) |
 | **FavouriteAnything** | Favourite any image or video, not just GIFs! Adds the favourite button to all media in the image viewer. | Ported by [NoReplyUI5](https://github.com/NoReplyUI5) |
-| **HypeSquad Switcher** | Switch your HypeSquad house directly from settings. | Ported by [NoReplyUI5](https://github.com/NoReplyUI5) |
 
 ---
 

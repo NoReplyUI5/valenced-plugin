@@ -2,11 +2,11 @@
 
 **Original Plugins**
 - Age Gate Skip — Bypasses age-restricted channel confirmation prompts automatically.
-- Fast Copy User ID — Adds a "Copy User ID" button to the message action sheet to quickly copy the message author's ID.
+- HypeSquad Switcher — Switch your HypeSquad house directly from settings.
 
 **Ported Plugins:**
+- Fast Copy User ID — Adds a "Copy User ID" button to the message action sheet to quickly copy the message author's ID.
 - FavouriteAnything — Favourite any image or video, not just GIFs. Adds the favourite button to all media in the image viewer.
-- HypeSquad Switcher — Switch your HypeSquad house directly from settings.
 
 **Source Code:** [GitHub Repo](https://github.com/NoReplyUI5/valenced-plugin)
 
