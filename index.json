@@ -1,7 +1,7 @@
 {
   "format": 1,
-  "name": "My Plugin Repository",
-  "description": "Example plugin repository from the Valenced plugin template.",
+  "name": "NoReplyUI5's Valenced Plugin Repo",
+  "description": "A collection of original and ported plugins for Valenced.",
   "plugins": {
     "mxtiy.ageskip": {
       "name": "Age Gate Skip",
