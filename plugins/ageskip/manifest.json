@@ -1,0 +1,20 @@
+{
+	"format": 1,
+	"id": "mxtiy.ageskip",
+	"name": "Age Gate Skip",
+	"description": "Automatically bypasses the age-restricted server confirmation prompt for verified 18+ accounts.",
+	"author": "NoReplyUI5 <1053918356375351386> (https://github.com/NoReplyUI5 \"GitHub\")",
+	"icon": "ShieldIcon",
+	"version": "1.0.0",
+	"dependencies": {
+		"valenced.api": {
+			"version": ">=1 <2"
+		},
+		"discord": {
+			"version": "*"
+		}
+	},
+	"dist": {
+		"script": "index.js"
+	}
+}
