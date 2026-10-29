@@ -5,7 +5,7 @@
 	"description": "Bypasses age-restricted channel confirmation prompts automatically.",
 	"author": "NoReplyUI5 <1053918356375351386> (https://github.com/NoReplyUI5 \"GitHub\")",
 	"icon": "ShieldIcon",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"dependencies": {
 		"valenced.api": {
 			"version": ">=1 <2"
