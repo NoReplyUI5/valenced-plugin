@@ -1,0 +1,158 @@
+{
+  "format": 1,
+  "name": "My Plugin Repository",
+  "description": "Example plugin repository from the Valenced plugin template.",
+  "plugins": {
+    "mxtiy.ageskip": {
+      "name": "Age Gate Skip",
+      "description": "Automatically bypasses the age-restricted server confirmation prompt for verified 18+ accounts.",
+      "author": "NoReplyUI5 <1053918356375351386> (https://github.com/NoReplyUI5 \"GitHub\")",
+      "icon": "ShieldIcon",
+      "channels": {
+        "latest": "1.0.0"
+      },
+      "versions": {
+        "1.0.0": {
+          "url": "https://noreplyui5.github.io/valenced-plugin/pool/mxtiy.ageskip@1.0.0.zip",
+          "sha256": "0f86312032e08ae23db921b7b6cbee187bc4889b9aa5bf7e19b1d730b7695574",
+          "size": 907,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
+    "mxtiy.audiofix": {
+      "name": "Bluetooth Audio Fix",
+      "description": "Prevents Discord from switching to handsfree (HFP) mode during calls by patching the native audio manager's setCommunicationModeOn method.",
+      "author": "NoReplyUI5 <1053918356375351386> (https://github.com/NoReplyUI5 \"GitHub\")",
+      "contributors": [
+        "Narwhal",
+        "redstonekasi"
+      ],
+      "icon": "voice_bar_bluetooth",
+      "channels": {
+        "latest": "1.0.0"
+      },
+      "versions": {
+        "1.0.0": {
+          "url": "https://noreplyui5.github.io/valenced-plugin/pool/mxtiy.audiofix@1.0.0.zip",
+          "sha256": "ef853b46876314f44742ae099f643a38e23fd1fc11514ec4eb8c47973b69522b",
+          "size": 922,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
+    "mxtiy.copyuserid": {
+      "name": "Fast Copy User ID",
+      "description": "Adds a 'Copy User ID' button to the message action sheet to quickly copy the message author's ID.",
+      "author": "NoReplyUI5 <1053918356375351386> (https://github.com/NoReplyUI5 \"GitHub\")",
+      "icon": "CopyIcon",
+      "channels": {
+        "latest": "1.0.0"
+      },
+      "versions": {
+        "1.0.0": {
+          "url": "https://noreplyui5.github.io/valenced-plugin/pool/mxtiy.copyuserid@1.0.0.zip",
+          "sha256": "3d19844342c194d32e0be49854628f1823af2ad392b815308b3b23603543b42d",
+          "size": 1550,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
+    "mxtiy.custom-pfp-banner": {
+      "name": "Custom PFP & Banner",
+      "description": "Custom profile backgrounds via USRBG and custom avatars via UserPFP. Enable either or both.",
+      "author": "NoReplyUI5 <1053918356375351386> (https://github.com/NoReplyUI5 \"GitHub\")",
+      "contributors": [
+        "k1ng_op <641266820187160576> (https://github.com/k1ng0p \"GitHub\")"
+      ],
+      "icon": "NitroWheelIcon",
+      "channels": {
+        "latest": "1.0.0"
+      },
+      "versions": {
+        "1.0.0": {
+          "url": "https://noreplyui5.github.io/valenced-plugin/pool/mxtiy.custom-pfp-banner@1.0.0.zip",
+          "sha256": "7612ad95c5a9c2a1dde0da049eb3a709cce37b8d3f5e5099096f56078fd25b2c",
+          "size": 1700,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
+    "mxtiy.favouriteanything": {
+      "name": "FavouriteAnything",
+      "description": "Favourite any image or video, not just GIFs! Adds the favourite button to all media in the image viewer.",
+      "author": "NoReplyUI5 <1053918356375351386> (https://github.com/NoReplyUI5 \"GitHub\")",
+      "icon": "ic_star_filled",
+      "channels": {
+        "latest": "1.0.3"
+      },
+      "versions": {
+        "1.0.3": {
+          "url": "https://noreplyui5.github.io/valenced-plugin/pool/mxtiy.favouriteanything@1.0.3.zip",
+          "sha256": "4bd50bca18af121e9ef76f77182eec1ef5b566b3a001013f3aae55dcc1ef7a19",
+          "size": 1205,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    },
+    "mxtiy.hypesquad": {
+      "name": "HypeSquad Switcher",
+      "description": "Switch your HypeSquad house from settings.",
+      "author": "NoReplyUI5 <1053918356375351386> (https://github.com/NoReplyUI5 \"GitHub\")",
+      "icon": "ic_switch_accounts",
+      "channels": {
+        "latest": "1.0.5"
+      },
+      "versions": {
+        "1.0.5": {
+          "url": "https://noreplyui5.github.io/valenced-plugin/pool/mxtiy.hypesquad@1.0.5.zip",
+          "sha256": "b66800bf3fbeb2be48c609bf7e9af94606a6f30cc291151b56d7fc9fce681886",
+          "size": 1332,
+          "dependencies": {
+            "valenced.api": {
+              "version": ">=1 <2"
+            },
+            "discord": {
+              "version": "*"
+            }
+          }
+        }
+      }
+    }
+  }
+}
