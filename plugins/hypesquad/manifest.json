@@ -5,7 +5,7 @@
 	"description": "Switch your HypeSquad house from settings.",
 	"author": "NoReplyUI5 <1053918356375351386> (https://github.com/NoReplyUI5 \"GitHub\")",
 	"icon": "ic_switch_accounts",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"dependencies": {
 		"valenced.api": {
 			"version": ">=1 <2"

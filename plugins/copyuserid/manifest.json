@@ -5,7 +5,7 @@
 	"description": "Adds a 'Copy User ID' button to the message action sheet to quickly copy the message author's ID.",
 	"author": "NoReplyUI5 <1053918356375351386> (https://github.com/NoReplyUI5 \"GitHub\")",
 	"icon": "CopyIcon",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"dependencies": {
 		"valenced.api": {
 			"version": ">=1 <2"
