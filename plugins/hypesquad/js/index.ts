@@ -1,3 +1,9 @@
+import Page from '@valenced/components/Page'
+import { Design } from '@valenced/discord/design'
+import { lookupModule } from '@valenced/modules/finders'
+import { withProps } from '@valenced/modules/finders/filters'
+import { React, ReactNative } from '@valenced/react'
+
 const HOUSES = [
 	{ id: 1, label: 'Bravery', subLabel: 'House of Bravery' },
 	{ id: 2, label: 'Brilliance', subLabel: 'House of Brilliance' },
@@ -6,8 +12,8 @@ const HOUSES = [
 ]
 
 function getHttp(): any {
-	return revenge.modules.finders.lookupModule(
-		revenge.modules.finders.filters.withProps('getAPIBaseURL', 'get', 'post'),
+	return lookupModule(
+		withProps('getAPIBaseURL', 'get', 'post'),
 	)?.[0]
 }
 
@@ -21,10 +27,8 @@ async function applyHouse(id: number): Promise<void> {
 	}
 }
 
-
 function getCurrentHouseId(): number {
-	const { filters, lookupModule } = revenge.modules.finders
-	const userStore = lookupModule(filters.withProps('getCurrentUser'))?.[0]
+	const userStore = lookupModule(withProps('getCurrentUser'))?.[0]
 	const flags: number = userStore?.getCurrentUser?.()?.flags ?? 0
 	if (flags & 64) return 1   // Bravery
 	if (flags & 128) return 2  // Brilliance
@@ -33,10 +37,8 @@ function getCurrentHouseId(): number {
 }
 
 function Settings() {
-	const { React } = revenge.react
-	const { ScrollView } = revenge.react.ReactNative
-	const { Page } = (revenge as any).components
-	const { TableRowGroup, TableRadioGroup, TableRadioRow } = (revenge as any).discord?.design?.Design ?? {}
+	const { ScrollView } = ReactNative
+	const { TableRowGroup, TableRadioGroup, TableRadioRow } = (Design as any) ?? {}
 
 	const [pending, setPending] = React.useState(false)
 	const [status, setStatus] = React.useState<string | null>(null)

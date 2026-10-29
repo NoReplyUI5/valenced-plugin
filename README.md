@@ -1,6 +1,37 @@
-# Valenced Plugin Template
+# NoReplyUI5's Valenced Plugins
 
-This repository is a starter monorepo for external Valenced plugins. Each plugin becomes one ZIP
+A collection of original and ported plugins for Valenced.
+
+## Install
+
+In Revenge: **Settings → General → Plugins → Add repository**, then paste:
+
+```
+https://noreplyui5.github.io/valenced-plugin/
+```
+
+## Plugins
+
+### Original
+
+| Plugin | Description | Source |
+|---|---|---|
+| **Age Gate Skip** | Automatically bypasses the age-restricted server confirmation prompt for verified 18+ accounts. | Written by [NoReplyUI5](https://github.com/NoReplyUI5) for Valenced |
+| **Fast Copy User ID** | Adds a 'Copy User ID' button to the message action sheet to quickly copy the message author's ID. | Written by [NoReplyUI5](https://github.com/NoReplyUI5) for Valenced |
+| **Custom PFP & Banner** | Custom profile backgrounds via USRBG and custom avatars via UserPFP. | Written by [NoReplyUI5](https://github.com/NoReplyUI5), contributions by [k1ng0p](https://github.com/k1ng0p) |
+
+### Ported
+
+| Plugin | Description | Source |
+|---|---|---|
+| **FavouriteAnything** | Favourite any image or video, not just GIFs! Adds the favourite button to all media in the image viewer. | Ported by [NoReplyUI5](https://github.com/NoReplyUI5) |
+| **HypeSquad Switcher** | Switch your HypeSquad house directly from settings. | Ported by [NoReplyUI5](https://github.com/NoReplyUI5) |
+
+---
+
+## Development
+
+This repository is a monorepo for external Valenced plugins. Each plugin becomes one ZIP
 file. One repository can hold any number of plugins under `plugins/`, and theme plugins under `themes/`.
 
 A plugin has up to three parts. Its own `manifest.json` declares all of them:
@@ -121,7 +152,6 @@ Besides color themes, the API allows registering font packs (`registerFontPack`)
 (`registerIconPack`) and emoji packs (`registerEmojiPack`). The examples in `themes/` show
 all available APIs. Asset paths are relative to the plugin folder, and Gradle
 packages `assets/` into the ZIP.
-
 
 ## `manifest.json`
 
@@ -307,11 +337,11 @@ A stable user never sees a beta, because the `latest` pointer never points at on
 
 ```jsonc
 {
-    "name": "My Plugin Repository",
+    "name": "NoReplyUI5's Valenced Plugin Repo",
     "channels": {
         "com.example.plugin": {
-            "latest": "1.1.4", // keep latest on 1.1.4, for example when 1.2.0 shipped broken
-            "lts": "1.0.9" // or add a channel of your own
+            "latest": "1.1.4",
+            "lts": "1.0.9"
         }
     }
 }
@@ -398,7 +428,6 @@ This can be a security risk if the workflow executes untrusted code from the for
 
 > [!NOTE]  
 > By default, validation will fail for pull requests from forks. To acknowledge the security warning and allow the workflow to run, you must set the `ACKNOWLEDGE_PR_SECURITY_WARNING` repository variable to `true` in your repository settings.
-
 
 ### Serve a repository on your machine
 

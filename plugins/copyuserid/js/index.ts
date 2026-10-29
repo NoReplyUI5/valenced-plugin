@@ -1,9 +1,17 @@
+import { ActionSheetActionCreators, ToastActionCreators } from '@valenced/discord/actions'
+import { getModuleWithImportedPath } from '@valenced/discord/utils/modules/finders'
+import { getModules } from '@valenced/modules/finders'
+import { withProps } from '@valenced/modules/finders/filters'
+import { before } from '@valenced/patcher'
+import { React, ReactNative } from '@valenced/react'
+import { withGeneratedIconComponent } from '@valenced/utils/discord'
+
 let msg: any = null
 let getCopyIcon: () => any = () => null
 
 function hideSheet() {
 	try {
-		revenge.discord.actions?.ActionSheetActionCreators?.hideActionSheet?.()
+		ActionSheetActionCreators?.hideActionSheet?.()
 	} catch {}
 }
 
@@ -34,12 +42,11 @@ function walkRows(tree: any, out: any[] = []): any[] {
 }
 
 function makeIconGetter(name: string): () => any {
-	const wg = (revenge as any).utils?.discord?.withGeneratedIconComponent
-	const filter = wg ? wg(name) : revenge.modules.finders.filters.withProps(name)
+	const filter = withGeneratedIconComponent ? withGeneratedIconComponent(name) : withProps(name)
 	let cached: any = null
 	let unsub: (() => void) | undefined
 	try {
-		unsub = revenge.modules.finders.getModules(
+		unsub = getModules(
 			filter,
 			(exports: any) => {
 				const val = exports?.[name] ?? exports?.default ?? exports
@@ -52,7 +59,6 @@ function makeIconGetter(name: string): () => any {
 }
 
 function makeRow(tpl: any, label: string, icon: any, onPress: () => void): any {
-	const { React } = revenge.react
 	const Row = tpl?.type
 	if (!Row) return null
 	const Icon = Row?.Icon
@@ -73,9 +79,9 @@ function inject(res: any): any {
 	const userId = msg.author.id
 	const row = makeRow(tpl, 'Copy User ID', getCopyIcon(), () => {
 		hideSheet()
-		revenge.react.ReactNative.Clipboard.setString(userId)
+		ReactNative.Clipboard.setString(userId)
 		try {
-			revenge.discord.actions?.ToastActionCreators?.showToast?.({
+			ToastActionCreators?.showToast?.({
 				content: 'User ID copied!',
 			})
 		} catch {}
@@ -106,7 +112,7 @@ function installWrapper(ns: any) {
 function onImportedPath(path: string, cb: (ns: any) => void): () => void {
 	try {
 		return (
-			revenge.discord.utils.modules.finders.getModuleWithImportedPath(
+			getModuleWithImportedPath(
 				path,
 				(ns: any) => cb(ns),
 			) ?? (() => {})
@@ -128,7 +134,7 @@ export default plugin({
 					const owner = ns?.default ?? ns
 					if (typeof owner?.openLazy !== 'function') return
 					unpatch.push(
-						revenge.patcher.before(owner, 'openLazy', (args: any) => {
+						before(owner, 'openLazy', (args: any) => {
 							const [, key, loc] = args ?? []
 							msg = key === 'MessageLongPressActionSheet' ? (loc?.message ?? null) : null
 							return args

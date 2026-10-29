@@ -1,10 +1,12 @@
 // Age Gate Skip
 // Bypasses age-restricted server and channel confirmation prompts.
 
+import { getModules, lookupModule } from '@valenced/modules/finders'
+import { withName, withProps } from '@valenced/modules/finders/filters'
+import { instead } from '@valenced/patcher'
+
 export default plugin({
 	start({ cleanup }) {
-		const { lookupModule, getModules, filters } = revenge.modules.finders
-
 		const actionKeys = [
 			'confirmNsfwGuild',
 			'confirmAgeGate',
@@ -13,9 +15,9 @@ export default plugin({
 		]
 
 		for (const key of actionKeys) {
-			const mod = lookupModule(filters.withProps(key))?.[0]
+			const mod = lookupModule(withProps(key))?.[0]
 			if (mod && typeof mod[key] === 'function') {
-				cleanup(revenge.patcher.instead(mod, key, () => {}))
+				cleanup(instead(mod, key, () => {}))
 			}
 		}
 
@@ -35,11 +37,11 @@ export default plugin({
 		]
 
 		for (const name of componentNames) {
-			getModules(filters.withName(name), (exports: any) => {
+			getModules(withName(name), (exports: any) => {
 				const target = exports?.default !== undefined ? exports : { [name]: exports }
 				const key = exports?.default !== undefined ? 'default' : name
 				if (!target[key]) return
-				cleanup(revenge.patcher.instead(target, key, () => null))
+				cleanup(instead(target, key, () => null))
 			})
 		}
 	},
