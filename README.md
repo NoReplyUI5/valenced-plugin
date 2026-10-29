@@ -16,9 +16,8 @@ https://noreplyui5.github.io/valenced-plugin/
 
 | Plugin | Description | Source |
 |---|---|---|
-| **Age Gate Skip** | Automatically bypasses the age-restricted server confirmation prompt for verified 18+ accounts. | Written by [NoReplyUI5](https://github.com/NoReplyUI5) for Valenced |
+| **Age Gate Skip** | Bypasses age-restricted channel confirmation prompts automatically. | Written by [NoReplyUI5](https://github.com/NoReplyUI5) for Valenced |
 | **Fast Copy User ID** | Adds a 'Copy User ID' button to the message action sheet to quickly copy the message author's ID. | Written by [NoReplyUI5](https://github.com/NoReplyUI5) for Valenced |
-| **Custom PFP & Banner** | Custom profile backgrounds via USRBG and custom avatars via UserPFP. | Written by [NoReplyUI5](https://github.com/NoReplyUI5), contributions by [k1ng0p](https://github.com/k1ng0p) |
 
 ### Ported
 

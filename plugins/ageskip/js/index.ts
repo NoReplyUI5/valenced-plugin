@@ -1,5 +1,5 @@
 // Age Gate Skip
-// Bypasses age-restricted server and channel confirmation prompts.
+// Bypasses age-restricted channel confirmation prompts.
 
 import { getModules, lookupModule } from '@valenced/modules/finders'
 import { withName, withProps } from '@valenced/modules/finders/filters'
@@ -8,8 +8,6 @@ import { instead } from '@valenced/patcher'
 export default plugin({
 	start({ cleanup }) {
 		const actionKeys = [
-			'confirmNsfwGuild',
-			'confirmAgeGate',
 			'confirmNsfwChannel',
 			'acknowledgeNsfwChannel',
 		]
@@ -22,13 +20,6 @@ export default plugin({
 		}
 
 		const componentNames = [
-			// Server-level gates
-			'NsfwGuildPrompt',
-			'GuildAgeGate',
-			'AgeGatePrompt',
-			'NsfwGate',
-			'AgeGate',
-			// Channel-level gates
 			'NsfwChannelPrompt',
 			'ChannelAgeGate',
 			'NsfwOverlay',
