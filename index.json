@@ -3,43 +3,6 @@
   "name": "NoReplyUI5's Valenced Plugin Repo",
   "description": "A collection of original and ported plugins for Valenced.",
   "plugins": {
-    "mxtiy.ageskip": {
-      "name": "Age Gate Skip",
-      "description": "Automatically bypasses the age-restricted server confirmation prompt for verified 18+ accounts.",
-      "author": "NoReplyUI5 <1053918356375351386> (https://github.com/NoReplyUI5 \"GitHub\")",
-      "icon": "ShieldIcon",
-      "channels": {
-        "latest": "1.0.1"
-      },
-      "versions": {
-        "1.0.0": {
-          "url": "https://noreplyui5.github.io/valenced-plugin/pool/mxtiy.ageskip@1.0.0.zip",
-          "sha256": "0f86312032e08ae23db921b7b6cbee187bc4889b9aa5bf7e19b1d730b7695574",
-          "size": 907,
-          "dependencies": {
-            "valenced.api": {
-              "version": ">=1 <2"
-            },
-            "discord": {
-              "version": "*"
-            }
-          }
-        },
-        "1.0.1": {
-          "url": "https://noreplyui5.github.io/valenced-plugin/pool/mxtiy.ageskip@1.0.1.zip",
-          "sha256": "74676edb43e991217bad4c00efcf3134c3395e0fe86af3df78ffc6926f221461",
-          "size": 902,
-          "dependencies": {
-            "valenced.api": {
-              "version": ">=1 <2"
-            },
-            "discord": {
-              "version": "*"
-            }
-          }
-        }
-      }
-    },
     "mxtiy.copyuserid": {
       "name": "Fast Copy User ID",
       "description": "Adds a 'Copy User ID' button to the message action sheet to quickly copy the message author's ID.",
@@ -66,33 +29,6 @@
           "url": "https://noreplyui5.github.io/valenced-plugin/pool/mxtiy.copyuserid@1.0.1.zip",
           "sha256": "1f41787df8cc613357b9bfcda09f940ffd5d1c7bdf9205775e1125ecc1bb8548",
           "size": 1537,
-          "dependencies": {
-            "valenced.api": {
-              "version": ">=1 <2"
-            },
-            "discord": {
-              "version": "*"
-            }
-          }
-        }
-      }
-    },
-    "mxtiy.custom-pfp-banner": {
-      "name": "Custom PFP & Banner",
-      "description": "Custom profile backgrounds via USRBG and custom avatars via UserPFP. Enable either or both.",
-      "author": "NoReplyUI5 <1053918356375351386> (https://github.com/NoReplyUI5 \"GitHub\")",
-      "contributors": [
-        "k1ng_op <641266820187160576> (https://github.com/k1ng0p \"GitHub\")"
-      ],
-      "icon": "NitroWheelIcon",
-      "channels": {
-        "latest": "1.0.0"
-      },
-      "versions": {
-        "1.0.0": {
-          "url": "https://noreplyui5.github.io/valenced-plugin/pool/mxtiy.custom-pfp-banner@1.0.0.zip",
-          "sha256": "7612ad95c5a9c2a1dde0da049eb3a709cce37b8d3f5e5099096f56078fd25b2c",
-          "size": 1700,
           "dependencies": {
             "valenced.api": {
               "version": ">=1 <2"
